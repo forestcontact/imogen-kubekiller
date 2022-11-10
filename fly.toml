@@ -1,0 +1,6 @@
+# fly.toml file generated for kube-killer on 2022-07-12T02:49:56-04:00
+
+app = "mc-kubekiller"
+
+kill_signal = "SIGINT"
+kill_timeout = 5

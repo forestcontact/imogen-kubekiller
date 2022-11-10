@@ -1,0 +1,3 @@
+# delete completed jobs every minute
+# coreweave's cluster is on 1.19.16, but ttlSecondsAfterFinished was introduced in v1.23
+* * * * * /usr/bin/kubectl delete jobs --field-selector status.successful=1 > /proc/1/fd/1 2>/proc/1/fd/2
